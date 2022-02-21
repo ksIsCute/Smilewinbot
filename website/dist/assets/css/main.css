@@ -1,30 +1,29 @@
-/* Instead of the cursor only showing on the body, the cursor will now show on the rest of the webpage.  */
-* {
-  cursor: url(../image/cursor.cur), auto;
-}
-
 .banner-image {
-    background-image: url('../image/background.jpg');
-    background-size: cover;
-    }
+  background-image: url('../image/background.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  width:100%;
+  min-width:100%;
+  }
 .navbar-custom {
-    background-color: #1a1a1a;
-    transition: 200ms;
+  background-color: #1a1a1a;
+  transition: 200ms;
 }
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-    color: #6c757d;
-    
+  color: #6c757d;
+  
 }
 .yellow_text {
-    color: #fed000;
+  color: #fed000;
 }
 .thai-lang {
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 }
 .bg {
-    background-color: #1a1a1a;
-  }
+  background-color: #1a1a1a;
+}
 ::-webkit-scrollbar {
 width: 10px;
 }
@@ -42,32 +41,6 @@ background: #fed000;
 }
 
 
-/* Grid Creation. */
-
-.grid {
-  all: revert;
-  display: grid;
-  justify-content:center;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
-  grid-auto-rows: 250px;
-  grid-gap: 6px;
-}
-
-.grid::before {
-  content: '';
-  padding-bottom: 100%;
-  grid-row: 1 / 1;
-  grid-column: 1 / 1;
-}
-
-.grid > *:first-child {
-  grid-row: 1 / 1;
-  grid-column: 1 / 1;
-}
-
-/* Just to make the grid visible. */
-.grid > * {
-  justify-content:center;
-  text-align:center;
-  color: white;
+* {
+cursor: url(../image/cursor.cur), auto;
 }
